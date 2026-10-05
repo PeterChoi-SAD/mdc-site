@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>여행사 업무 시스템 샘플 대시보드</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+<style>
+  body { word-break: keep-all; margin: 0; font-family: 'Noto Sans KR', system-ui, sans-serif; background: #FAF8F4; color: #1E1B16; }
+  a { color: #B45309; text-decoration: none; }
+</style>
+<style>
+@media (max-width: 800px) {
+  div[style*="padding: 48px 56px"] { padding: 28px 16px !important; }
+  div[style*="repeat(3, minmax(0, 1fr))"] { grid-template-columns: 1fr !important; }
+  div[style*="overflow: hidden"] { overflow-x: auto !important; }
+  div[style*="overflow: hidden"] > div { min-width: 620px; }
+  div[style*="align-items: baseline"] { flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<div style="width: 100%; max-width: 1280px; min-height: 900px; margin: 0 auto; box-sizing: border-box; padding: 48px 56px; display: flex; flex-direction: column; gap: 28px;">
+
+  <div style="display: flex; flex-direction: column; gap: 4px;">
+    <a href="index.html" style="font-size: 14px; font-weight: 600;">← 코드브릿지로 돌아가기</a>
+    <div style="display: flex; align-items: baseline; gap: 12px; margin-top: 6px;">
+      <div style="font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 26px;">여행사 업무 시스템 — 예약 관리</div>
+      <div style="font-size: 13px; color: #8A8375;">샘플 화면 · 예시 데이터</div>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;">
+    <div style="padding: 22px 24px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+      <div style="font-size: 13px; color: #8A8375; font-weight: 600;">이번 주 예약</div>
+      <div style="font-size: 30px; font-weight: 700; margin-top: 6px;">31건</div>
+    </div>
+    <div style="padding: 22px 24px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+      <div style="font-size: 13px; color: #8A8375; font-weight: 600;">매출</div>
+      <div style="font-size: 30px; font-weight: 700; margin-top: 6px;">$42,300</div>
+    </div>
+    <div style="padding: 22px 24px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+      <div style="font-size: 13px; color: #8A8375; font-weight: 600;">취소</div>
+      <div style="font-size: 30px; font-weight: 700; margin-top: 6px; color: #B91C1C;">2건</div>
+    </div>
+  </div>
+
+  <div style="border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6; overflow: hidden;">
+    <div style="display: grid; grid-template-columns: 1fr 0.9fr 1.4fr 0.8fr 0.9fr; padding: 14px 24px; background: #F1EBDD; font-size: 13px; font-weight: 700; color: #4A453D;">
+      <div>예약번호</div><div>고객명</div><div>상품</div><div>출발일</div><div>상태</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 0.9fr 1.4fr 0.8fr 0.9fr; padding: 14px 24px; font-size: 14px; border-top: 1px solid #F1EBDD;">
+      <div>TRV-5521</div><div>홍길동</div><div>밴쿠버-서울 왕복</div><div>10-15</div><div>확정</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 0.9fr 1.4fr 0.8fr 0.9fr; padding: 14px 24px; font-size: 14px; border-top: 1px solid #F1EBDD;">
+      <div>TRV-5519</div><div>김영희</div><div>로키산맥 패키지</div><div>10-03</div><div>결제대기</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 0.9fr 1.4fr 0.8fr 0.9fr; padding: 14px 24px; font-size: 14px; border-top: 1px solid #F1EBDD;">
+      <div>TRV-5514</div><div>이철수</div><div>하와이 4박6일</div><div>10-22</div><div>확정</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 0.9fr 1.4fr 0.8fr 0.9fr; padding: 14px 24px; font-size: 14px; border-top: 1px solid #F1EBDD;">
+      <div>TRV-5508</div><div>박지민</div><div>밴쿠버-도쿄 왕복</div><div>09-30</div><div style="color: #B91C1C;">취소</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 0.9fr 1.4fr 0.8fr 0.9fr; padding: 14px 24px; font-size: 14px; border-top: 1px solid #F1EBDD;">
+      <div>TRV-5501</div><div>최수아</div><div>캐나다 동부 투어</div><div>11-05</div><div>확정</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>레거시 코드 유지보수 컨설팅 — 파일럿 랜딩페이지</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  body { word-break: keep-all; margin: 0; font-family: 'Noto Sans KR', system-ui, sans-serif; background: #FAF8F4; color: #1E1B16; }
+  a { color: #B45309; text-decoration: none; }
+  a:hover { color: #7C3510; }
+  ::selection { background: #F3E3D3; }
+</style>
+<style>
+@media (max-width: 800px) {
+  body { overflow-x: hidden; }
+  div[style*="padding: 20px 64px"] { padding: 14px 18px !important; flex-wrap: wrap; gap: 10px; }
+  div[style*="padding: 20px 64px"] > div:last-child { flex-wrap: wrap; gap: 6px 14px !important; font-size: 13px !important; }
+  div[style*="64px"] { padding-left: 20px !important; padding-right: 20px !important; }
+  div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+  div[style*="display: flex"][style*="gap: 16px"], div[style*="display: flex"][style*="gap: 20px"], div[style*="display: flex"][style*="gap: 24px"] { flex-wrap: wrap; }
+  h1[style] { font-size: 34px !important; }
+  h2[style] { font-size: 25px !important; }
+  div[style*="max-width: 980px"] { padding-top: 64px !important; padding-bottom: 56px !important; }
+}
+</style>
+</head>
+<body>
+
+<div style="width: 100%; display: flex; flex-direction: column;">
+
+  <!-- NAV -->
+  <div style="position: sticky; top: 0; z-index: 10; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; padding: 20px 64px; background: rgba(250,248,244,0.92); backdrop-filter: blur(6px); border-bottom: 1px solid #E7E1D6;">
+    <div style="font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 22px; letter-spacing: -0.01em;">MDC Technology</div>
+    <div style="display: flex; align-items: center; gap: 26px; font-size: 14.5px; font-weight: 500; color: #4A453D;">
+      <a href="#problem">문제</a>
+      <a href="#process">진행 방식</a>
+      <a href="#expand">서비스</a>
+      <a href="#samples">샘플</a>
+      <a href="#ai-agent">AI 사례</a>
+      <a href="#contact" style="padding: 10px 20px; border-radius: 999px; background: #B45309; color: #FFFFFF; font-weight: 600;">무료 진단 요청</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div style="width: 100%; box-sizing: border-box; padding: 120px 64px 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 28px; max-width: 980px;">
+    <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: #F3E3D3; color: #7C3510; font-size: 13px; font-weight: 700; letter-spacing: 0.02em;">한인 비즈니스 전담 · 기술 컨설팅</div>
+    <h1 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 56px; line-height: 1.28; color: #1E1B16;">원개발자가 떠난 시스템,<br>감이 아니라 검증으로 고칩니다</h1>
+    <p style="margin: 0; font-size: 19px; line-height: 1.75; color: #4A453D; max-width: 640px;">문서도 없고 물어볼 사람도 없는 레거시 코드, AI 기반 분석과 사람의 검증을 함께 사용해서 원인을 정확히 찾고 안전하게 고쳐드립니다. 한국어로 직접 설명 드립니다.</p>
+    <div style="display: flex; gap: 16px; margin-top: 8px;">
+      <a href="#contact" style="padding: 16px 32px; border-radius: 10px; background: #B45309; color: #FFFFFF; font-weight: 700; font-size: 16px;">무료 초기 진단 신청</a>
+      <a href="#process" style="padding: 16px 32px; border-radius: 10px; background: transparent; border: 1.5px solid #D8D0C0; color: #1E1B16; font-weight: 600; font-size: 16px;">진행 방식 보기</a>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <div id="problem" style="width: 100%; box-sizing: border-box; padding: 90px 64px; background: #1E1B16; display: flex; flex-direction: column; gap: 48px;">
+    <div style="max-width: 640px;">
+      <div style="font-size: 14px; font-weight: 700; color: #B45309; letter-spacing: 0.04em; margin-bottom: 12px;">이런 상황, 낯익지 않으세요</div>
+      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #FAF8F4; line-height: 1.4;">개발자는 떠났고, 시스템은 계속 돌아가야 합니다</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+      <div style="padding: 28px; border-radius: 14px; background: #2A251E; border: 1px solid #3A342A;">
+        <div style="font-size: 28px; margin-bottom: 14px;">🗂️</div>
+        <div style="font-size: 17px; font-weight: 700; color: #FAF8F4; margin-bottom: 8px;">문서가 없다</div>
+        <div style="font-size: 15px; line-height: 1.65; color: #B8B0A2;">주석도, 설계 문서도 없이 코드만 남아 있어서 뭘 건드려도 불안합니다.</div>
+      </div>
+      <div style="padding: 28px; border-radius: 14px; background: #2A251E; border: 1px solid #3A342A;">
+        <div style="font-size: 28px; margin-bottom: 14px;">💬</div>
+        <div style="font-size: 17px; font-weight: 700; color: #FAF8F4; margin-bottom: 8px;">영어로 설명 받기 부담스럽다</div>
+        <div style="font-size: 15px; line-height: 1.65; color: #B8B0A2;">문제를 정확히 전달하고, 원인을 이해하는 데 언어 장벽이 없었으면 합니다.</div>
+      </div>
+      <div style="padding: 28px; border-radius: 14px; background: #2A251E; border: 1px solid #3A342A;">
+        <div style="font-size: 28px; margin-bottom: 14px;">🧱</div>
+        <div style="font-size: 17px; font-weight: 700; color: #FAF8F4; margin-bottom: 8px;">쌓인 데이터 때문에 손을 못 댄다</div>
+        <div style="font-size: 15px; line-height: 1.65; color: #B8B0A2;">몇 년치 데이터가 그대로 쌓여 있어서, 구조를 바꾸려니 마이그레이션이 무섭고 그냥 두자니 계속 불편합니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div id="process" style="width: 100%; box-sizing: border-box; padding: 100px 64px; display: flex; flex-direction: column; gap: 56px;">
+    <div style="max-width: 640px;">
+      <div style="font-size: 14px; font-weight: 700; color: #B45309; letter-spacing: 0.04em; margin-bottom: 12px;">진행 방식</div>
+      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #1E1B16; line-height: 1.4;">추측이 아니라, 단계마다 검증합니다</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 8px 0;">
+        <div style="width: 40px; height: 40px; border-radius: 10px; background: #F3E3D3; color: #7C3510; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">1</div>
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16;">무료 초기 진단</div>
+        <div style="font-size: 14.5px; line-height: 1.65; color: #4A453D;">증상을 듣고, 코드를 훑어본 뒤 대략적인 원인과 작업 범위를 말씀드립니다.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 8px 0;">
+        <div style="width: 40px; height: 40px; border-radius: 10px; background: #F3E3D3; color: #7C3510; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">2</div>
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16;">원인 분석</div>
+        <div style="font-size: 14.5px; line-height: 1.65; color: #4A453D;">코드를 실제 비즈니스 흐름과 대조하고, 관련 로그·데이터로 가설을 검증합니다.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 8px 0;">
+        <div style="width: 40px; height: 40px; border-radius: 10px; background: #F3E3D3; color: #7C3510; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">3</div>
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16;">검증 후 수정</div>
+        <div style="font-size: 14.5px; line-height: 1.65; color: #4A453D;">수정안을 테스트 환경에서 먼저 확인하고, 승인 후에만 실제 서비스에 반영합니다.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 8px 0;">
+        <div style="width: 40px; height: 40px; border-radius: 10px; background: #F3E3D3; color: #7C3510; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;">4</div>
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16;">지속 관리 (선택)</div>
+        <div style="font-size: 14.5px; line-height: 1.65; color: #4A453D;">월 정액 계약으로 이후 문제도 우선 대응해 드립니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY -->
+  <div id="why" style="width: 100%; box-sizing: border-box; padding: 90px 64px; background: #F1EBDD; display: flex; flex-direction: column; gap: 40px;">
+    <div style="max-width: 640px;">
+      <div style="font-size: 14px; font-weight: 700; color: #7C3510; letter-spacing: 0.04em; margin-bottom: 12px;">왜 저인가</div>
+      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #1E1B16; line-height: 1.4;">빠른 분석과, 그것을 함부로 믿지 않는 태도</h2>
+    </div>
+    <div style="display: flex; gap: 24px;">
+      <div style="flex: 1; padding: 32px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 10px;">한국어로 바로 소통</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">기술 용어를 통역 없이 한국어로 직접 설명 드리고, 사장님이 이해하실 수 있는 말로 다시 풀어 드립니다.</div>
+      </div>
+      <div style="flex: 1; padding: 32px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 10px;">AI로 빠르게, 사람이 검증</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">코드 분석은 AI로 빠르게 진행하되, 실제 배포 전에는 반드시 직접 대조·테스트하여 확인합니다.</div>
+      </div>
+      <div style="flex: 1; padding: 32px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 10px;">무역업을 직접 운영 중</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">한국→캐나다 수입 사업(<a href="https://buykorea.ca" target="_blank" rel="noopener">buykorea.ca</a>)을 직접 운영하고 있어서, 무역·물류 업무 흐름은 코드가 아니라 현장에서부터 이해하고 있습니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPANDED SERVICES -->
+  <div id="expand" style="width: 100%; box-sizing: border-box; padding: 90px 64px; display: flex; flex-direction: column; gap: 48px;">
+    <div style="max-width: 680px;">
+      <div style="font-size: 14px; font-weight: 700; color: #B45309; letter-spacing: 0.04em; margin-bottom: 12px;">코드 유지보수를 넘어서</div>
+      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #1E1B16; line-height: 1.4;">필요에 맞는 기술로 업무 시스템을 만들어 드립니다</h2>
+      <p style="margin: 12px 0 0; font-size: 16px; line-height: 1.7; color: #4A453D;">내부 관리용 도구는 빠르게, 고객·파트너가 직접 쓰는 시스템은 필요한 만큼 커스터마이징해서 만듭니다.</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 18px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="font-size: 16px; font-weight: 700; color: #1E1B16;">내부 운영 시스템</div>
+        <div style="font-size: 13.5px; color: #8A8375;">빠르게 만들고 바로 씁니다</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;">
+        <div style="padding: 22px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+          <div style="font-size: 24px; margin-bottom: 10px;">📊</div>
+          <div style="font-size: 15px; font-weight: 700; color: #1E1B16;">ERP</div>
+          <div style="font-size: 13px; line-height: 1.6; color: #8A8375; margin-top: 6px;">전사 자원·회계 관리</div>
+        </div>
+        <div style="padding: 22px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+          <div style="font-size: 24px; margin-bottom: 10px;">📦</div>
+          <div style="font-size: 15px; font-weight: 700; color: #1E1B16;">창고관리(WMS)</div>
+          <div style="font-size: 13px; line-height: 1.6; color: #8A8375; margin-top: 6px;">입출고·재고 관리</div>
+        </div>
+        <div style="padding: 22px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+          <div style="font-size: 24px; margin-bottom: 10px;">🧾</div>
+          <div style="font-size: 15px; font-weight: 700; color: #1E1B16;">벤더관리</div>
+          <div style="font-size: 13px; line-height: 1.6; color: #8A8375; margin-top: 6px;">거래처·정산 관리</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 18px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div style="font-size: 16px; font-weight: 700; color: #1E1B16;">고객·파트너 시스템</div>
+        <div style="font-size: 13.5px; color: #8A8375;">화면·흐름을 자유롭게 설계합니다</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;">
+        <div style="padding: 22px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+          <div style="font-size: 24px; margin-bottom: 10px;">🤝</div>
+          <div style="font-size: 15px; font-weight: 700; color: #1E1B16;">CRM</div>
+          <div style="font-size: 13px; line-height: 1.6; color: #8A8375; margin-top: 6px;">고객·상담 이력, 영업 파이프라인 관리 — 필요 시 이메일·카톡 채널 연동까지</div>
+        </div>
+        <div style="padding: 22px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+          <div style="font-size: 24px; margin-bottom: 10px;">🏭</div>
+          <div style="font-size: 15px; font-weight: 700; color: #1E1B16;">SRM</div>
+          <div style="font-size: 13px; line-height: 1.6; color: #8A8375; margin-top: 6px;">공급업체 평가·계약·발주 관리 — 파트너사가 직접 접속하는 포털까지 지원</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size: 13.5px; color: #8A8375; line-height: 1.7;">내부에서만 쓰는 관리 화면은 검증된 도구로 빠르고 저렴하게, 고객이나 거래처가 직접 로그인해서 쓰는 화면은 브랜드에 맞춘 디자인과 자유로운 확장이 가능한 방식으로 별도 개발합니다.</div>
+  </div>
+
+  <!-- DOMAIN SAMPLES -->
+  <div id="samples" style="width: 100%; box-sizing: border-box; padding: 90px 64px; background: #1E1B16; display: flex; flex-direction: column; gap: 40px;">
+    <div style="max-width: 640px;">
+      <div style="font-size: 14px; font-weight: 700; color: #B45309; letter-spacing: 0.04em; margin-bottom: 12px;">업종별 샘플</div>
+      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #FAF8F4; line-height: 1.4;">실제로 만들어보면 이런 모습입니다</h2>
+      <p style="margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: #B8B0A2;">아래는 데모용 샘플 대시보드입니다 (실제 데이터 아님).</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;">
+      <a href="Dashboard-Trade.html" style="display: flex; flex-direction: column; gap: 10px; padding: 26px; border-radius: 14px; background: #2A251E; border: 1px solid #3A342A;">
+        <div style="font-size: 26px;">🚢</div>
+        <div style="font-size: 17px; font-weight: 700; color: #FAF8F4;">무역</div>
+        <div style="font-size: 13.5px; color: #B8B0A2; line-height: 1.6;">BL/LC 관리 대시보드</div>
+        <div style="font-size: 13px; font-weight: 700; color: #B45309; margin-top: 4px;">샘플 보기 →</div>
+      </a>
+      <a href="Dashboard-Logistics.html" style="display: flex; flex-direction: column; gap: 10px; padding: 26px; border-radius: 14px; background: #2A251E; border: 1px solid #3A342A;">
+        <div style="font-size: 26px;">🚚</div>
+        <div style="font-size: 17px; font-weight: 700; color: #FAF8F4;">물류</div>
+        <div style="font-size: 13.5px; color: #B8B0A2; line-height: 1.6;">배송 추적 대시보드</div>
+        <div style="font-size: 13px; font-weight: 700; color: #B45309; margin-top: 4px;">샘플 보기 →</div>
+      </a>
+      <a href="Dashboard-Ecommerce.html" style="display: flex; flex-direction: column; gap: 10px; padding: 26px; border-radius: 14px; background: #2A251E; border: 1px solid #3A342A;">
+        <div style="font-size: 26px;">🛒</div>
+        <div style="font-size: 17px; font-weight: 700; color: #FAF8F4;">이커머스</div>
+        <div style="font-size: 13.5px; color: #B8B0A2; line-height: 1.6;">주문/재고 대시보드</div>
+        <div style="font-size: 13px; font-weight: 700; color: #B45309; margin-top: 4px;">샘플 보기 →</div>
+      </a>
+      <a href="Dashboard-Travel.html" style="display: flex; flex-direction: column; gap: 10px; padding: 26px; border-radius: 14px; background: #2A251E; border: 1px solid #3A342A;">
+        <div style="font-size: 26px;">✈️</div>
+        <div style="font-size: 17px; font-weight: 700; color: #FAF8F4;">여행사</div>
+        <div style="font-size: 13.5px; color: #B8B0A2; line-height: 1.6;">예약 관리 대시보드</div>
+        <div style="font-size: 13px; font-weight: 700; color: #B45309; margin-top: 4px;">샘플 보기 →</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- AI AGENT CASES -->
+  <div id="ai-agent" style="width: 100%; box-sizing: border-box; padding: 90px 64px; display: flex; flex-direction: column; gap: 40px;">
+    <div style="max-width: 640px;">
+      <div style="font-size: 14px; font-weight: 700; color: #B45309; letter-spacing: 0.04em; margin-bottom: 12px;">AI 에이전트 적용 사례</div>
+      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #1E1B16; line-height: 1.4;">반복 업무는 AI 에이전트가 대신합니다</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;">
+      <div style="display: flex; gap: 18px; padding: 26px; border-radius: 14px; background: #F1EBDD;">
+        <div style="font-size: 26px;">📉</div>
+        <div>
+          <div style="font-size: 16px; font-weight: 700; color: #1E1B16;">재고 부족 자동 알림</div>
+          <div style="font-size: 14px; line-height: 1.65; color: #4A453D; margin-top: 6px;">재고가 임계치 이하로 떨어지면 담당자에게 자동으로 알려줍니다.</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 18px; padding: 26px; border-radius: 14px; background: #F1EBDD;">
+        <div style="font-size: 26px;">✉️</div>
+        <div>
+          <div style="font-size: 16px; font-weight: 700; color: #1E1B16;">문의 답변 초안 자동 작성</div>
+          <div style="font-size: 14px; line-height: 1.65; color: #4A453D; margin-top: 6px;">자주 오는 문의에 대해 답변 초안을 자동으로 만들어 검토만 하면 되게 합니다.</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 18px; padding: 26px; border-radius: 14px; background: #F1EBDD;">
+        <div style="font-size: 26px;">🧮</div>
+        <div>
+          <div style="font-size: 16px; font-weight: 700; color: #1E1B16;">정산 데이터 자동 검증</div>
+          <div style="font-size: 14px; line-height: 1.65; color: #4A453D; margin-top: 6px;">매입·매출 데이터의 불일치를 자동으로 찾아내 사람이 확인만 하게 합니다.</div>
+        </div>
+      </div>
+      <div style="display: flex; gap: 18px; padding: 26px; border-radius: 14px; background: #F1EBDD;">
+        <div style="font-size: 26px;">🗂️</div>
+        <div>
+          <div style="font-size: 16px; font-weight: 700; color: #1E1B16;">문서·인보이스 자동 분류</div>
+          <div style="font-size: 14px; line-height: 1.65; color: #4A453D; margin-top: 6px;">첨부 파일, 인보이스 등을 내용에 맞게 자동으로 분류하고 정리합니다.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFRA RESILIENCE -->
+  <div id="infra" style="width: 100%; box-sizing: border-box; padding: 90px 64px; background: #F1EBDD; display: flex; flex-direction: column; gap: 40px;">
+    <div style="max-width: 640px;">
+      <div style="font-size: 14px; font-weight: 700; color: #7C3510; letter-spacing: 0.04em; margin-bottom: 12px;">인프라 안정성</div>
+      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #1E1B16; line-height: 1.4;">시스템이 멈추면 매출도 멈춘다는 것을 압니다</h2>
+      <p style="margin: 12px 0 0; font-size: 15px; line-height: 1.7; color: #4A453D;">서버뿐 아니라 s/w PBX(전화 시스템) 같은 사내 인프라도 함께 구축·관리합니다.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;">
+      <div style="padding: 26px 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">서버 이중화</div>
+        <div style="font-size: 14px; line-height: 1.65; color: #4A453D;">서버 한 대에 장애가 나도 다른 서버가 바로 이어받아 서비스가 멈추지 않게 구성합니다.</div>
+      </div>
+      <div style="padding: 26px 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">자동 백업</div>
+        <div style="font-size: 14px; line-height: 1.65; color: #4A453D;">데이터베이스와 주요 파일을 정기적으로 백업해서, 사고가 나도 복구할 수 있게 합니다.</div>
+      </div>
+      <div style="padding: 26px 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">모니터링·알림</div>
+        <div style="font-size: 14px; line-height: 1.65; color: #4A453D;">서버 상태를 계속 지켜보다가 문제가 생기면 즉시 담당자에게 알립니다.</div>
+      </div>
+      <div style="padding: 26px 22px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">사내 인프라 (PBX 등)</div>
+        <div style="font-size: 14px; line-height: 1.65; color: #4A453D;">s/w PBX(전화 시스템), 사내망, VPN 등 서버 외의 인프라도 함께 구축하고 관리해 드립니다.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FOOTER -->
+  <div id="contact" style="width: 100%; box-sizing: border-box; padding: 100px 64px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px;">
+    <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 32px; color: #1E1B16;">지금 겪고 있는 문제, 편하게 말씀해 주세요</h2>
+    <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A453D; max-width: 560px;">초기 진단은 무료입니다. 어떤 증상인지, 어떤 시스템인지 알려주시면 24시간 안에 답변 드립니다.</p>
+    <div style="display: flex; gap: 16px; margin-top: 8px;">
+      <a href="mailto:[이메일 주소]" style="padding: 16px 32px; border-radius: 10px; background: #B45309; color: #FFFFFF; font-weight: 700; font-size: 16px;">이메일로 문의하기</a>
+      <a href="#" style="padding: 16px 32px; border-radius: 10px; background: #FEE500; color: #1E1B16; font-weight: 700; font-size: 16px;">카카오톡 상담</a>
+    </div>
+  </div>
+
+  <div style="width: 100%; box-sizing: border-box; padding: 32px 64px; border-top: 1px solid #E7E1D6; display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #8A8375;">
+    <div>MDC Technology · 밴쿠버, BC</div>
+    <div>[전화번호] · [이메일 주소]</div>
+  </div>
+
+</div>
+
+</body>
+</html>
