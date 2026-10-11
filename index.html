@@ -38,7 +38,6 @@
     <div style="display: flex; align-items: center; gap: 26px; font-size: 14.5px; font-weight: 500; color: #4A453D;">
       <a href="#problem">문제</a>
       <a href="#process">진행 방식</a>
-      <a href="#risk">주의점</a>
       <a href="#expand">서비스</a>
       <a href="#samples">샘플</a>
       <a href="#ai-agent">AI 사례</a>
@@ -54,6 +53,36 @@
     <div style="display: flex; gap: 16px; margin-top: 8px;">
       <a href="#contact" style="padding: 16px 32px; border-radius: 10px; background: #B45309; color: #FFFFFF; font-weight: 700; font-size: 16px;">무료 초기 진단 신청</a>
       <a href="#process" style="padding: 16px 32px; border-radius: 10px; background: transparent; border: 1.5px solid #D8D0C0; color: #1E1B16; font-weight: 600; font-size: 16px;">진행 방식 보기</a>
+    </div>
+  </div>
+
+  <!-- AI RISK -->
+  <div id="risk" style="width: 100%; box-sizing: border-box; padding: 90px 64px; background: #FAF3E8; display: flex; flex-direction: column; gap: 40px;">
+    <div style="max-width: 720px;">
+      <div style="font-size: 14px; font-weight: 700; color: #B45309; letter-spacing: 0.04em; margin-bottom: 12px;">꼭 알아두셔야 할 점</div>
+      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #1E1B16; line-height: 1.4;">AI로 만든 시스템, 개발 경험 없이 운영하면 큰 문제가 될 수 있습니다</h2>
+      <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.7; color: #4A453D;">AI 도구 덕분에 누구나 “돌아가는” 프로그램을 만들 수 있게 됐습니다. 하지만 돌아가는 것과 안전하고 오래 쓸 수 있는 것은 다릅니다. 코드를 검토할 수 없는 상태로 실제 업무에 쓰면, 문제는 대개 쌓인 뒤에 한꺼번에 드러납니다.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+      <div style="padding: 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6; border-top: 4px solid #B45309;">
+        <div style="font-size: 28px; margin-bottom: 14px;">🔓</div>
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">보안 문제</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">접근 권한 설정 누락, 비밀번호·API 키 노출, 입력값 검증 부족처럼 겉으로는 티가 나지 않는 구멍이 생기기 쉽습니다. 고객·거래 데이터가 있는 시스템이라면 유출 사고로 이어질 수 있습니다.</div>
+      </div>
+      <div style="padding: 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6; border-top: 4px solid #B45309;">
+        <div style="font-size: 28px; margin-bottom: 14px;">🐌</div>
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">성능 문제</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">데이터가 적을 때는 빨랐던 화면이 몇 달 뒤 느려지거나 멈추는 일이 흔합니다. 데이터 구조와 조회 방식을 처음부터 잡지 않으면, 나중에 고치는 비용이 훨씬 커집니다.</div>
+      </div>
+      <div style="padding: 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6; border-top: 4px solid #B45309;">
+        <div style="font-size: 28px; margin-bottom: 14px;">💥</div>
+        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">복구 불능</div>
+        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">백업 없이 운영하다 데이터를 잃거나, 변경 이력이 없어 어제 상태로 되돌릴 수 없고, 한 번 잘못 건드린 데이터베이스를 복원하지 못하는 경우가 있습니다. 쌓인 업무 데이터는 한번 잃으면 다시 만들 수 없습니다.</div>
+      </div>
+    </div>
+    <div style="max-width: 760px; padding: 24px 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
+      <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">AI를 쓰지 말라는 이야기가 아닙니다</div>
+      <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">저도 AI로 빠르게 작업합니다. 다만 결과물을 읽고, 테스트하고, 백업과 복구 절차를 갖춘 뒤에 반영하는 사람의 검증이 반드시 필요합니다. 이미 AI로 만든 시스템이 있으시다면, 문제가 생기기 전에 한 번 점검받으시길 권합니다. 무료 초기 진단으로 시작하실 수 있습니다.</div>
     </div>
   </div>
 
@@ -131,36 +160,6 @@
         <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 10px;">무역업을 직접 운영 중</div>
         <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">한국→캐나다 수입 사업(<a href="https://buykorea.ca" target="_blank" rel="noopener">buykorea.ca</a>)을 직접 운영하고 있어서, 무역·물류 업무 흐름은 코드가 아니라 현장에서부터 이해하고 있습니다.</div>
       </div>
-    </div>
-  </div>
-
-  <!-- AI RISK -->
-  <div id="risk" style="width: 100%; box-sizing: border-box; padding: 90px 64px; background: #FAF3E8; display: flex; flex-direction: column; gap: 40px;">
-    <div style="max-width: 720px;">
-      <div style="font-size: 14px; font-weight: 700; color: #B45309; letter-spacing: 0.04em; margin-bottom: 12px;">꼭 알아두셔야 할 점</div>
-      <h2 style="margin: 0; font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 34px; color: #1E1B16; line-height: 1.4;">AI로 만든 시스템, 개발 경험 없이 운영하면 큰 문제가 될 수 있습니다</h2>
-      <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.7; color: #4A453D;">AI 도구 덕분에 누구나 “돌아가는” 프로그램을 만들 수 있게 됐습니다. 하지만 돌아가는 것과 안전하고 오래 쓸 수 있는 것은 다릅니다. 코드를 검토할 수 없는 상태로 실제 업무에 쓰면, 문제는 대개 쌓인 뒤에 한꺼번에 드러납니다.</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
-      <div style="padding: 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6; border-top: 4px solid #B45309;">
-        <div style="font-size: 28px; margin-bottom: 14px;">🔓</div>
-        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">보안 문제</div>
-        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">접근 권한 설정 누락, 비밀번호·API 키 노출, 입력값 검증 부족처럼 겉으로는 티가 나지 않는 구멍이 생기기 쉽습니다. 고객·거래 데이터가 있는 시스템이라면 유출 사고로 이어질 수 있습니다.</div>
-      </div>
-      <div style="padding: 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6; border-top: 4px solid #B45309;">
-        <div style="font-size: 28px; margin-bottom: 14px;">🐌</div>
-        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">성능 문제</div>
-        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">데이터가 적을 때는 빨랐던 화면이 몇 달 뒤 느려지거나 멈추는 일이 흔합니다. 데이터 구조와 조회 방식을 처음부터 잡지 않으면, 나중에 고치는 비용이 훨씬 커집니다.</div>
-      </div>
-      <div style="padding: 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6; border-top: 4px solid #B45309;">
-        <div style="font-size: 28px; margin-bottom: 14px;">💥</div>
-        <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">복구 불능</div>
-        <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">백업 없이 운영하다 데이터를 잃거나, 변경 이력이 없어 어제 상태로 되돌릴 수 없고, 한 번 잘못 건드린 데이터베이스를 복원하지 못하는 경우가 있습니다. 쌓인 업무 데이터는 한번 잃으면 다시 만들 수 없습니다.</div>
-      </div>
-    </div>
-    <div style="max-width: 760px; padding: 24px 28px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E7E1D6;">
-      <div style="font-size: 17px; font-weight: 700; color: #1E1B16; margin-bottom: 8px;">AI를 쓰지 말라는 이야기가 아닙니다</div>
-      <div style="font-size: 15px; line-height: 1.7; color: #4A453D;">저도 AI로 빠르게 작업합니다. 다만 결과물을 읽고, 테스트하고, 백업과 복구 절차를 갖춘 뒤에 반영하는 사람의 검증이 반드시 필요합니다. 이미 AI로 만든 시스템이 있으시다면, 문제가 생기기 전에 한 번 점검받으시길 권합니다. 무료 초기 진단으로 시작하실 수 있습니다.</div>
     </div>
   </div>
 
