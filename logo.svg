@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" role="img" aria-label="MDC Technology">
-  <rect width="100" height="56" rx="12" fill="#B45309"/>
-  <g fill="none" stroke="#FAF8F4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="100" height="56" rx="12" fill="#0EA5E9"/>
+  <g fill="none" stroke="#F7FBFE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
     <path d="M15 40V16l10 14 10-14v24"/>
     <path d="M44 16v24h5a12 12 0 0 0 0-24z"/>
     <path d="M85 21.5A12 12 0 1 0 85 34.5"/>
